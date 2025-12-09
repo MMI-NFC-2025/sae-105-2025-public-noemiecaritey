@@ -3,11 +3,9 @@
 
 /* Utils */
 @import "utils/variables.css";
-@import "utils/helpers.css";
 
 /* Base */
 @import "base/main.css";
-@import "base/typography.css";
 
 /* Layout */
 @import "layout/header.css";
@@ -21,4 +19,3 @@
 @import "components/button.css";
 @import "components/carousel.css";
 @import "components/artist-card.css";
-@import "components/partners.css";
