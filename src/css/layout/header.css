@@ -78,37 +78,3 @@
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .header {
-        padding: 1rem;
-    }
-
-    .header__star {
-        height: 40px;
-    }
-
-    .menu-btn {
-        width: 35px;
-        height: 35px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header {
-        padding: 0.75rem;
-    }
-
-    .header__star {
-        height: 35px;
-    }
-
-    .menu-btn {
-        width: 30px;
-        height: 30px;
-    }
-
-    .menu-btn__bar {
-        height: 2.5px;
-    }
-}

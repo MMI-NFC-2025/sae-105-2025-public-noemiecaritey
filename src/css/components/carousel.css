@@ -1,4 +1,4 @@
-/* Carousel */
+/* Carousel - version non responsive */
 .carousel {
   position: relative;
   display: flex;
@@ -17,54 +17,30 @@
 }
 
 .carousel__track img {
-  width: 100%;
-  height: auto;
-  max-height: 400px;
+  width: 264px;
+  height: 148px;
+  aspect-ratio: 66/37;
   object-fit: cover;
-  border-radius: 0.5rem;
+  border-radius: 0;
+  display: block;
+  filter: grayscale(100%);
 }
 
 .carousel__btn {
-  background: none;
+  background: var(--jaune, #d3c756);
   border: none;
-  padding: 0;
-  cursor: pointer;
-  width: 45px;
-  height: 45px;
+  border-radius: 50%;
+  width: 58px;
+  height: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10;
-  transition: var(--transition-normal, 0.3s);
-  flex-shrink: 0;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .carousel__btn img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
+  width: 48px;
+  height: 48px;
 }
 
-.carousel__btn:hover {
-  transform: scale(1.15);
-  opacity: 0.8;
-}
-
-/* Les boutons sont positionnés automatiquement par flexbox */
-/* Gauche et droite */
-
-@media (max-width: 768px) {
-  .carousel {
-    gap: 1rem;
-  }
-
-  .carousel__btn {
-    width: 35px;
-    height: 35px;
-  }
-
-  .carousel__track img {
-    max-height: 300px;
-  }
-}

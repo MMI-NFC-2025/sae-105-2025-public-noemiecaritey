@@ -43,34 +43,3 @@
   padding-left: 1.5rem;
 }
 
-/* Responsive - Ajuste la position sur mobile */
-@media (max-width: 768px) {
-  .menu {
-    position: fixed;
-    top: 70px;
-    right: 15px;
-    width: 240px;
-  }
-
-  .menu[hidden] {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .menu {
-    top: 60px;
-    right: 10px;
-    width: calc(100% - 20px);
-    max-width: 280px;
-  }
-
-  .menu__link {
-    padding: 0.85rem 1rem;
-    font-size: 0.95rem;
-  }
-
-  .menu__link:hover {
-    padding-left: 1.2rem;
-  }
-}

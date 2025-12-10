@@ -1,51 +1,166 @@
 .section--programme {
     padding: 2rem 1rem;
+    position: relative;
+    z-index: 10;
 }
 .programme-card {
-    border-radius: 20px;
-    padding: 1.5rem;
-    color: var(--noir);
+    font-size: var(--text-m);
+    background: var(--dore, #95793c);
+    border-radius: 2.5rem;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 351px;
+    height: 216px;
+    padding: 0;
+    margin: 0 auto;
+    max-width: none;
+    z-index: 10;
+}
+.programme-card__header {
+    position: absolute;
+    top: 3px;
+    left: 20px;
+    right: 20px;
+    width: auto;
+    display: flex;
+    align-items: flex-start;
 }
 .section__title {
-    font-family: var(--font-titres);
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-family: "Abril Fatface";
+    font-size: 30px;
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: auto;
 }
 
 .carousel {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 100%;
+    position: relative;
 }
 .carousel__btn {
-    background: none;
-    border: none;
-    cursor: pointer;
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+    transform: none;
+    z-index: 2;
 }
-.carousel__img {
-    border-radius: 8px;
-    filter: grayscale(100%);
+.carousel__btn--prev {
+    order: -1;
+}
+.carousel__btn--next {
+    order: 1;
+}
+.carousel__btn img {
+    width: 48px;
+    height: 48px;
+}
+.carousel__track {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin: 0 1.5rem;
+    margin-top: 6px;
+}
+.carousel__track img {
+    width: 264px;
+    height: 148px;
+    object-fit: cover;
+    border-radius: 1.2rem;
+    display: block;
 }
 
 .section--dark {
-    background-color: var(--noir);
-    color: var(--blanc);
-    padding: 3rem 1rem;
+    background-color: var(--noir, #000);
+    color: var(--blanc, #fff);
+    padding: 75px 0 3rem 0;
+    margin: -75px 0 0 0;
+    margin-left: -100vw;
+    margin-right: -100vw;
+    padding-left: 100vw;
+    padding-right: 100vw;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
-.section__title--light { color: var(--blanc); text-align: left; }
+
+.section__header {
+    margin-bottom: 2rem;
+}
+
+.section__title--light {
+    color: var(--blanc, #fff);
+    text-align: left;
+    font-family: var(--font-h2, "Abril Fatface");
+    font-size: var(--text-m, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+}
 
 .artist-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.artist-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.artist-card__visual {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.artist-card__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%);
+}
+
 .artist-card__name {
-    font-family: var(--font-titre); 
-    margin-top: 0.5rem;
+    font-family: var(--font-text, "Inter", sans-serif);
+    color: var(--dore, #95793c);
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 500;
 }
-.artist-card__img { filter: grayscale(100%); }
+
+.section__footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
 
 .hero {
     text-align: center;

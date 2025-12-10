@@ -24,7 +24,7 @@ h2{
 
 /* Utilitaire texte doré */
 .u-text-gold {
-  color: var(--dore);
+  color: var(--dore,);
 }
 
 /* Utilitaire texte gras */
