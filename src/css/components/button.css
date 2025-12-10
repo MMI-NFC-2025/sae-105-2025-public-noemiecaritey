@@ -1,0 +1,17 @@
+/* Buttons styling */
+.btn {
+  display: inline-block;
+  padding: var(--spacing-sm, 1rem) var(--spacing-md, 1.5rem);
+  color: var(--noir, #000);
+  border: none;
+  border-radius: var(--radius-md, 0.5rem);
+  font-family: var(--font-text, "Inter", sans-serif);
+  font-size: var(--text-s, 1rem);
+  cursor: pointer;
+  transition: var(--transition-normal, 0.3s);
+}
+
+.btn:hover {
+  background-color: var(--jaune, #d3c756);
+  transform: translateY(-2px);
+}

@@ -1,0 +1,41 @@
+/* Concert Card */
+.card-concert {
+  background-color: var(--blanc, #fff);
+  border: 1px solid var(--jaune, #d3c756);
+  border-radius: var(--radius-md, 0.5rem);
+  overflow: hidden;
+  transition: var(--transition-normal, 0.3s);
+}
+
+.card-concert:hover {
+  box-shadow: var(--shadow-lg, 0 10px 15px -3px rgba(0, 0, 0, 0.1));
+}
+
+.card-concert__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-concert__content {
+  padding: var(--spacing-md, 1.5rem);
+}
+
+.card-concert__date {
+  font-size: var(--text-s, 1rem);
+  color: var(--dore, #95793c);
+  margin-bottom: var(--spacing-sm, 1rem);
+}
+
+.card-concert__title {
+  font-family: var(--font-titres, "Abril Fatface", serif);
+  font-size: var(--text-m, 1.25rem);
+  color: var(--noir, #000);
+  margin-bottom: var(--spacing-sm, 1rem);
+}
+
+.card-concert__description {
+  font-size: var(--text-s, 1rem);
+  color: #666;
+  line-height: 1.6;
+}

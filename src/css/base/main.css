@@ -1,0 +1,33 @@
+body {
+    font-family: var(--font-text);
+    color: var(--noir);
+    background-color: var(--blanc);
+    line-height: 1.5;
+}
+
+h3{
+    font-family: var(--font-h2, "Abril Fatface");
+    font-size: var(--text-m, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--dore);
+}
+
+h2{
+    font-family: var(--font-h2, "Abril Fatface");
+    font-size: var(--text-m, 20px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Utilitaire texte doré */
+.u-text-gold {
+  color: var(--dore);
+}
+
+/* Utilitaire texte gras */
+.u-bold {
+  color: var(--dore);
+}

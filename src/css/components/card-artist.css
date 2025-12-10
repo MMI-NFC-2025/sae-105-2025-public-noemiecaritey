@@ -1,0 +1,36 @@
+/* Artist Card */
+.card-artist {
+  background-color: var(--blanc, #fff);
+  border: 2px solid var(--jaune, #d3c756);
+  border-radius: var(--radius-lg, 1rem);
+  overflow: hidden;
+  transition: var(--transition-normal, 0.3s);
+}
+
+.card-artist:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl, 0 20px 25px -5px rgba(0, 0, 0, 0.1));
+}
+
+.card-artist__image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-artist__content {
+  padding: var(--spacing-md, 1.5rem);
+}
+
+.card-artist__name {
+  font-family: var(--font-titres, "Abril Fatface", serif);
+  font-size: var(--text-xl, 1.875rem);
+  color: var(--noir, #000);
+  margin-bottom: var(--spacing-sm, 1rem);
+}
+
+.card-artist__bio {
+  font-size: var(--text-s, 1rem);
+  color: var(--dore, #95793c);
+  line-height: 1.6;
+}

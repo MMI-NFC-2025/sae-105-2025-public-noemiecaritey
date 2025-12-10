@@ -8,7 +8,7 @@
       content="Festicloze - La magie de Noël au coeur de la musique baroque. Festival à Montbéliard du 20 au 23 décembre."
     />
     <title>Festicloze </title>
-    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
     <link
       rel="icon"
       type="image/png"
@@ -33,29 +33,30 @@
   <header class="header">
     <div class="header__container">
       <a href="/" class="header__logo-link">
-        <img alt="Logo Festicloze" src="/assets/favicons/titre.svg" alt="Festicloze" class="header__logo"/>
+        <img src="assets/favicons/titre.svg" alt="Festicloze" class="header__logo">
       </a>
-    </div class="header__decoration">
-      <img src="assets/favicons/star1.svg" alt=" " aria-hidden="true">
+
+      <div class="header__decoration">
+        <img src="assets/favicons/star1.svg" alt="Étoile Festicloze" class="header__star" aria-hidden="true">
+      </div>
+
+      <button class="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span class="menu-btn__bar"></span>
+        <span class="menu-btn__bar"></span>
+        <span class="menu-btn__bar"></span>
+      </button>
     </div>
 
-    <button class="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
-                <span class="menu-btn__bar"></span>
-                <span class="menu-btn__bar"></span>
-                <span class="menu-btn__bar"></span>
-            </button>
-        </div>
-
- <nav id="main-nav" class="menu" hidden>
-            <ul class="menu__list u-list-unstyled">
-                <li class="menu__item"><a href="/" class="menu__link">Accueil</a></li>
-                <li class="menu__item"><a href="/historique.html" class="menu__link">Historique</a></li>
-                <li class="menu__item"><a href="/programme.html" class="menu__link">Programme</a></li>
-                <li class="menu__item"><a href="/artistes.html" class="menu__link">Artistes</a></li>
-                <li class="menu__item"><a href="/contact.html" class="menu__link">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav id="main-nav" class="menu" hidden>
+      <ul class="menu__list u-list-unstyled">
+        <li class="menu__item"><a href="/" class="menu__link">Accueil</a></li>
+        <li class="menu__item"><a href="/historique.html" class="menu__link">Historique</a></li>
+        <li class="menu__item"><a href="/programme.html" class="menu__link">Programme</a></li>
+        <li class="menu__item"><a href="/artistes.html" class="menu__link">Artistes</a></li>
+        <li class="menu__item"><a href="/contact.html" class="menu__link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
 <main>
 
@@ -124,6 +125,12 @@
         <img src="assets/favicons/plus.svg" alt=""> <span class="btn__icon"></span>
     </a>
   </div>
+</section>
+ 
+<section class="section section--infos">>
+    <a href="/infos_pratiques.html" class="btn btn--gold-block">
+      <img src="assets/favicons/infos_pratiques.svg" alt=""> <span class="btn__icon"></span>
+    </a>
 </section>
        
 

@@ -1,0 +1,16 @@
+/* Button styles (generic btn class) */
+.btn-primary {
+  color: var(--noir, #000);
+}
+
+.btn-primary:hover {
+  background-color: var(--jaune, #d3c756);
+}
+
+.btn-secondary {
+  background-color: transparent;
+}
+
+.btn-secondary:hover {
+  color: var(--blanc, #fff);
+}

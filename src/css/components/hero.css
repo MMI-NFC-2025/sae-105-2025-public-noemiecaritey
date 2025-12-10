@@ -1,0 +1,39 @@
+.hero {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+.hero__slogan {
+    font-family: var(--font-h2);
+    font-size: var(--text-m);
+    color: var(--dore);
+    margin-bottom: 1rem;
+}
+.hero__visual { margin: 2rem 0; }
+.hero__date {
+    font-size: var(--text-m);
+    margin-bottom: 1rem;
+    font-family: var(--font-h2);
+}
+
+/* Responsive image pour la première photo */
+.hero__visual img,
+.hero img[alt*="affiche"] {
+    width: 392px;
+    height: 524px;
+    max-width: 100%;
+    max-height: 80vh;
+    display: block;
+    margin: 0 auto;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+@media (max-width: 480px) {
+  .hero__visual img,
+  .hero img[alt*="affiche"] {
+    width: 90vw;
+    height: auto;
+    max-width: 90vw;
+    max-height: 70vh;
+  }
+}

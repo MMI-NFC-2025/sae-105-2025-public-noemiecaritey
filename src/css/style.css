@@ -1,9 +1,27 @@
-h2{
+/* Importer tous les fichiers CSS */
+@import url('./vendors/normalize.css');
+@import url('./utils/variables.css');
+@import url('./base/main.css');
+@import url('./base/media.css');
+@import url('./layout/header.css');
+@import url('./layout/section.css');
+@import url('./layout/footer.css');
+@import url('./components/btn.css');
+@import url('./components/button.css');
+@import url('./components/menu.css');
+@import url('./components/menu-btn.css');
+@import url('./components/hero.css');
+@import url('./components/card-artist.css');
+@import url('./components/card-concert.css');
+@import url('./components/carousel.css');
+
+/* Typographie */
+h2 {
   font-family: "Abril Fatface", sans-serif;
   font-size: 30px;
 }
 
-h3{
+h3 {
   font-family: "Abril Fatface", sans-serif;
   font-size: 20px;
 }

@@ -1,0 +1,64 @@
+.section--programme {
+    padding: 2rem 1rem;
+}
+.programme-card {
+    border-radius: 20px;
+    padding: 1.5rem;
+    color: var(--noir);
+}
+.section__title {
+    font-family: var(--font-titres);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.carousel__btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.carousel__img {
+    border-radius: 8px;
+    filter: grayscale(100%);
+}
+
+.section--dark {
+    background-color: var(--noir);
+    color: var(--blanc);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+.section__title--light { color: var(--blanc); text-align: left; }
+
+.artist-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.artist-card__name {
+    font-family: var(--font-titre); 
+    margin-top: 0.5rem;
+}
+.artist-card__img { filter: grayscale(100%); }
+
+.hero {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+.hero__slogan {
+    font-family: var(--font-titres);
+    font-size: var(--text-xl);
+    color: var(--doré);
+    margin-bottom: 1rem;
+}
+.hero__visual { margin: 2rem 0; }
+.hero__date {
+    font-size: var(--text-m);
+    margin-bottom: 1rem;
+}

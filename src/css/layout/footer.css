@@ -1,0 +1,9 @@
+.section--infos {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+.btn--gold-block {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+}
