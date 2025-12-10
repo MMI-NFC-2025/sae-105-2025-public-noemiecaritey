@@ -250,20 +250,23 @@
 
 /* Programme Page */
 .programme-page {
-  padding: 1rem 1.5rem;
+  padding: 0;
+  padding-top: 60px;
 }
 
 .programme-filters {
   background-color: var(--dore, #95793c);
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 1.5rem;
   margin-bottom: 1.5rem;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding-left: calc(50vw - 50% + 1.5rem);
+  padding-right: calc(50vw - 50% + 1.5rem);
 }
 
 .programme-filters__title {
-  font-family: "Abril Fatface", serif;
-  font-size: 1rem;
-  color: var(--noir, #000);
   margin: 0 0 0.5rem 0;
+  color: var(--noir, #000);
 }
 
 .filter-buttons {
@@ -272,19 +275,20 @@
 }
 
 .filter-btn {
-  background-color: var(--blanc, #fff);
-  color: var(--noir, #000);
+  background: none;
   border: none;
-  padding: 0.5rem 1rem;
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
+  padding: 0;
   cursor: pointer;
-  border-radius: 4px;
+  display: block;
 }
 
-.filter-btn--active {
-  background-color: var(--noir, #000);
-  color: var(--blanc, #fff);
+.filter-btn img {
+  display: block;
+  height: auto;
+}
+
+.programme-content {
+  padding: 1rem 1.5rem;
 }
 
 .programme-page__title {
