@@ -77,7 +77,7 @@
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     margin: 0 1.5rem;
-    margin-top: 6px;
+    margin-top: 12px;
 }
 .carousel__track img {
     width: 264px;
@@ -90,7 +90,7 @@
 .section--dark {
     background-color: var(--noir, #000);
     color: var(--blanc, #fff);
-    padding: 75px 0 3rem 0;
+    padding: 75px 0 0 0;
     margin: -75px 0 0 0;
     margin-left: -100vw;
     margin-right: -100vw;
@@ -103,6 +103,7 @@
 
 .section__header {
     margin-bottom: 2rem;
+    margin-top: 10px;
 }
 
 .section__title--light {
@@ -114,13 +115,14 @@
     font-weight: 400;
     line-height: normal;
     margin-bottom: 0;
+    margin-left: 20px;
 }
 
 .artist-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -134,18 +136,20 @@
 }
 
 .artist-card__visual {
-    width: 100%;
-    max-width: 200px;
-    margin-bottom: 1rem;
+    width: 127px;
+    height: 191px;
+    aspect-ratio: 127/191;
+    margin-bottom: 0;
     overflow: hidden;
     border-radius: 0;
 }
 
 .artist-card__img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     filter: grayscale(100%);
+    object-fit: cover;
 }
 
 .artist-card__name {
@@ -160,6 +164,7 @@
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .hero {

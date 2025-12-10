@@ -5,6 +5,10 @@ body {
     line-height: 1.5;
 }
 
+main {
+    padding-top: 60px;
+}
+
 h3{
     font-family: var(--font-h2, "Abril Fatface");
     font-size: var(--text-m, 20px);

@@ -8,10 +8,10 @@
   font-family: var(--font-text, "Inter", sans-serif);
   font-size: var(--text-s, 1rem);
   cursor: pointer;
-  transition: var(--transition-normal, 0.3s);
+  transition: none;
 }
 
 .btn:hover {
-  background-color: var(--jaune, #d3c756);
-  transform: translateY(-2px);
+  background: none;
+  transform: none;
 }

@@ -16,6 +16,11 @@
   min-width: 0;
 }
 
+.carousel__link {
+  display: block;
+  cursor: pointer;
+}
+
 .carousel__track img {
   width: 264px;
   height: 148px;

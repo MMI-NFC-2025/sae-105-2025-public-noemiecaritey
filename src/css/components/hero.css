@@ -1,14 +1,44 @@
 .hero {
     text-align: center;
     padding: 2rem 1rem;
+    position: relative;
 }
+
 .hero__slogan {
     font-family: var(--font-h2);
     font-size: var(--text-m);
     color: var(--dore);
     margin-bottom: 1rem;
 }
-.hero__visual { margin: 2rem 0; }
+
+.hero__visual { 
+    margin: 2rem 0;
+    position: relative;
+}
+
+.hero__visual::before,
+.hero__visual::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--jaune, #d3c756);
+    z-index: -1;
+}
+
+.hero__visual::before {
+    width: 200px;
+    height: 200px;
+    top: 50px;
+    left: -80px;
+}
+
+.hero__visual::after {
+    width: 250px;
+    height: 250px;
+    bottom: 30px;
+    right: -90px;
+}
+
 .hero__date {
     font-size: var(--text-m);
     margin-bottom: 1rem;

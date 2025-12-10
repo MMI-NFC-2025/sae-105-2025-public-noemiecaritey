@@ -7,3 +7,42 @@
     max-width: 300px;
     margin: 0 auto;
 }
+
+/* Footer */
+.footer {
+  background-color: var(--blanc, #fff);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer__partners {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.footer__partner-img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+.footer__links {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+}
+
+.footer__link {
+  color: var(--noir, #000);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
