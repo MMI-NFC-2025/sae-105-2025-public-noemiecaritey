@@ -46,4 +46,21 @@ document.addEventListener('DOMContentLoaded', function() {
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
     updateCarousel();
   });
+
+  // Menu
+  const menuBtn = document.querySelector('.menu-btn');
+  const menu = document.querySelector('.menu');
+  const menuClose = document.querySelector('.menu__close');
+
+  // Ouvrir le menu
+  menuBtn.addEventListener('click', function() {
+    menu.setAttribute('aria-hidden', 'false');
+    menuBtn.setAttribute('aria-expanded', 'true');
+  });
+
+  // Fermer le menu
+  menuClose.addEventListener('click', function() {
+    menu.setAttribute('aria-hidden', 'true');
+    menuBtn.setAttribute('aria-expanded', 'false');
+  });
 });

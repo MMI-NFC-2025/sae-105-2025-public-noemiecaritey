@@ -48,13 +48,21 @@
       </button>
     </div>
 
-    <nav id="main-nav" class="menu" hidden>
+    <nav id="main-nav" class="menu" aria-hidden="true">
+      <div class="menu__header">
+        <h2 class="menu__title">Menu</h2>
+        <button class="menu__close" aria-label="Fermer le menu">
+          <img src="assets/favicons/croix.svg" alt="">
+        </button>
+      </div>
       <ul class="menu__list u-list-unstyled">
         <li class="menu__item"><a href="/" class="menu__link">Accueil</a></li>
-        <li class="menu__item"><a href="/historique.html" class="menu__link">Historique</a></li>
-        <li class="menu__item"><a href="/programme.html" class="menu__link">Programme</a></li>
-        <li class="menu__item"><a href="/artistes.html" class="menu__link">Artistes</a></li>
-        <li class="menu__item"><a href="/contact.html" class="menu__link">Contact</a></li>
+        <li class="menu__item"><a href="assets/historique.html" class="menu__link">Historique</a></li>
+        <li class="menu__item"><a href="assets/programme.html" class="menu__link">Programme</a></li>
+        <li class="menu__item"><a href="assets/artistes.html" class="menu__link">Artistes</a></li>
+        <li class="menu__item"><a href="assets/scenes.html" class="menu__link">Scènes</a></li>
+        <li class="menu__item"><a href="assets/infos_pratiques.html" class="menu__link">Infos pratiques</a></li>
+        <li class="menu__item"><a href="assets/contact.html" class="menu__link">Contact</a></li>
       </ul>
     </nav>
   </header>
