@@ -1,0 +1,249 @@
+/* Page Historique */
+.historique-section {
+  padding: 2rem 1.5rem;
+}
+
+.historique-title {
+  font-family: "Abril Fatface", serif;
+  font-size: 2rem;
+  color: var(--noir, #000);
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.historique-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.historique-text-image {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.historique-intro {
+  font-family: "Inter", sans-serif;
+  font-size: var(--text-s, 16px);
+  line-height: 1.6;
+  color: var(--noir, #000);
+  margin-bottom: 1.5rem;
+}
+
+.historique-circle {
+  width: 300px;
+  height: 300px;
+  background-color: var(--jaune, #d3c756);
+  border-radius: 50%;
+  position: absolute;
+  top: -30px;
+  right: -50px;
+  z-index: -1;
+}
+
+.historique-circle-2 {
+  width: 250px;
+  height: 250px;
+  background-color: var(--jaune, #d3c756);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -300px;
+  left: -80px;
+  z-index: -1;
+}
+
+.historique-text {
+  font-family: "Inter", sans-serif;
+  font-size: var(--text-s, 16px);
+  line-height: 1.6;
+  color: var(--noir, #000);
+  margin-bottom: 2rem;
+}
+
+/* Page Section */
+.page-section {
+  padding: 2rem 1.5rem;
+  background-color: var(--noir, #000);
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding-left: calc(50vw - 50% + 1.5rem);
+  padding-right: calc(50vw - 50% + 1.5rem);
+}
+
+.page-section__title {
+  font-family: "Abril Fatface", serif;
+  font-size: 1.5rem;
+  color: var(--blanc, #fff);
+  margin-bottom: 1rem;
+}
+
+.page-section__text {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--blanc, #fff);
+  margin-bottom: 1rem;
+}
+
+/* Team Section */
+.team-section {
+  background-color: var(--noir, #000);
+  color: var(--blanc, #fff);
+  padding: 2rem 1.5rem;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding-left: calc(50vw - 50% + 1.5rem);
+  padding-right: calc(50vw - 50% + 1.5rem);
+}
+
+.team-section__subtitle {
+  font-family: "Abril Fatface", serif;
+  font-size: 1.25rem;
+  color: var(--blanc, #fff);
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-card__visual {
+  width: 127px;
+  height: 191px;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.team-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(100%);
+}
+
+.team-section__footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.btn-expand {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.btn-expand img {
+  width: 112px;
+  height: 33px;
+}
+
+/* Values Section */
+.values-section {
+  padding: calc(2rem - 20px) 1.5rem 2rem 1.5rem;
+  background-color: var(--blanc, #fff);
+  position: relative;
+}
+
+.values-container {
+  position: relative;
+  z-index: 1;
+}
+
+.values-title {
+  font-family: "Abril Fatface", serif;
+  font-size: 2rem;
+  color: var(--noir, #000);
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.values-circle {
+  width: 250px;
+  height: 250px;
+  background-color: var(--jaune, #d3c756);
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  right: 170px;
+  z-index: 0;
+}
+
+.values-circle-2 {
+  width: 280px;
+  height: 280px;
+  background-color: var(--jaune, #d3c756);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+  left: 150px;
+  z-index: 0;
+}
+
+.value-item {
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.value-circle {
+  width: 80px;
+  height: 80px;
+  background-color: var(--jaune, #d3c756);
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: -1;
+}
+
+.value-subtitle {
+  font-family: "Abril Fatface", serif;
+  font-size: 1.25rem;
+  color: var(--noir, #000);
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.value-text {
+  font-family: "Inter", sans-serif;
+  font-size: var(--text-s, 16px);
+  line-height: 1.6;
+  color: var(--noir, #000);
+  position: relative;
+  z-index: 1;
+}
+
+/* Internal Links */
+.internal-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.internal-link {
+  display: block;
+}
+
+.internal-link img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
