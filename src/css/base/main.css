@@ -10,7 +10,7 @@ main {
 }
 
 h3{
-    font-family: var(--font-h2, "Abril Fatface");
+    font-family: var(--font-text, Inter);
     font-size: var(--text-m, 20px);
     font-style: normal;
     font-weight: 400;

@@ -247,3 +247,100 @@
   max-width: 300px;
   height: auto;
 }
+
+/* Programme Page */
+.programme-page {
+  padding: 1rem 1.5rem;
+}
+
+.programme-filters {
+  background-color: var(--dore, #95793c);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.programme-filters__title {
+  font-family: "Abril Fatface", serif;
+  font-size: 1rem;
+  color: var(--noir, #000);
+  margin: 0 0 0.5rem 0;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filter-btn {
+  background-color: var(--blanc, #fff);
+  color: var(--noir, #000);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.filter-btn--active {
+  background-color: var(--noir, #000);
+  color: var(--blanc, #fff);
+}
+
+.programme-page__title {
+  font-family: "Abril Fatface", serif;
+  font-size: 2rem;
+  color: var(--noir, #000);
+  margin-bottom: 1.5rem;
+}
+
+.concert-day {
+  margin-bottom: 2rem;
+}
+
+.concert-day__date {
+  font-family: "Inter", serif;
+  font-size: 1.25rem;
+  color: var(--dore, #95793c);
+  margin-bottom: 1rem;
+}
+
+.concert-day__location {
+  font-family: "Inter", serif;
+  font-size: 1.25rem;
+  color: var(--noir, #000);
+  margin: 1.5rem 0 1rem 0;
+}
+
+.concert-card {
+  margin-bottom: 1.5rem;
+}
+
+.concert-card__image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+.concert-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.concert-card__description {
+  font-family: "Inter", sans-serif;
+  font-size: var(--text-s, 16px);
+  line-height: 1.5;
+  color: var(--noir, #000);
+  margin-bottom: 0.5rem;
+}
+
+.concert-card__time {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: var(--noir, #000);
+  font-weight: 600;
+}

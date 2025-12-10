@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Programme du festival Festicloze - Concerts de musique baroque du 20 au 23 décembre."
+    />
+    <title>Programme - Festicloze</title>
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <link rel="icon" type="image/png" href="favicons/titre.svg" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicons/titre.svg" />
+    <link rel="shortcut icon" href="favicons/titre.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/titre.svg" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+  <header class="header">
+    <div class="header__container">
+      <a href="../index.html" class="header__logo-link">
+        <img src="favicons/titre.svg" alt="Festicloze" class="header__logo">
+      </a>
+
+      <div class="header__decoration">
+        <img src="favicons/star1.svg" alt="Étoile Festicloze" class="header__star" aria-hidden="true">
+      </div>
+
+      <button class="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+        <span class="menu-btn__bar"></span>
+        <span class="menu-btn__bar"></span>
+        <span class="menu-btn__bar"></span>
+      </button>
+    </div>
+
+    <nav id="main-nav" class="menu" aria-hidden="true">
+      <div class="menu__header">
+        <h2 class="menu__title">Menu</h2>
+        <button class="menu__close" aria-label="Fermer le menu">
+          <img src="favicons/croix.svg" alt="">
+        </button>
+      </div>
+      <ul class="menu__list u-list-unstyled">
+        <li class="menu__item"><a href="../index.html" class="menu__link">Accueil</a></li>
+        <li class="menu__item"><a href="historique.html" class="menu__link">Historique</a></li>
+        <li class="menu__item"><a href="programme.html" class="menu__link">Programme</a></li>
+        <li class="menu__item"><a href="artistes.html" class="menu__link">Artistes</a></li>
+        <li class="menu__item"><a href="scenes.html" class="menu__link">Scènes</a></li>
+        <li class="menu__item"><a href="infos_pratiques.html" class="menu__link">Infos pratiques</a></li>
+        <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+
+<section class="programme-page">
+  <div class="programme-filters">
+    <h2 class="programme-filters__title">Filtres</h2>
+    <div class="filter-buttons">
+      <button class="filter-btn filter-btn--active">Scènes</button>
+      <button class="filter-btn">Dates</button>
+    </div>
+  </div>
+
+  <h1 class="programme-page__title">Programme</h1>
+
+  <!-- 20 décembre -->
+  <div class="concert-day">
+    <h3 class="concert-day__date">20 décembre au Château</h3>
+    
+    <article class="concert-card">
+      <div class="concert-card__image">
+        <img src="img/image2.avif" alt="Château des Lumières">
+      </div>
+      <div class="concert-card__content">
+        <p class="concert-card__description">
+          La scène des Lumières accueille, Rinaldo Alessandrini pour une improvisation.
+        </p>
+        <p class="concert-card__time">Heure: 18h</p>
+      </div>
+    </article>
+
+    <h3 class="concert-day__location">À l'église Saint-Maimbœuf</h3>
+    
+    <article class="concert-card">
+      <div class="concert-card__image">
+        <img src="img/image6.avif" alt="Église Saint-Maimbœuf">
+      </div>
+      <div class="concert-card__content">
+        <p class="concert-card__description">
+          La scène Royale accueille,Benjamin Alard pour un concert à l'orgue.
+        </p>
+        <p class="concert-card__time">Heure: 20h</p>
+      </div>
+    </article>
+  </div>
+
+  <!-- 21 décembre -->
+  <div class="concert-day">
+    <h3 class="concert-day__date">21 décembre au Château</h3>
+    
+    <article class="concert-card">
+      <div class="concert-card__image">
+        <img src="img/image2.avif" alt="Château des Lumières">
+      </div>
+      <div class="concert-card__content">
+        <p class="concert-card__description">
+          La scène des Lumières accueille, William Christie pour un concert illuminé à la bougie.
+        </p>
+        <p class="concert-card__time">Heure: 20h</p>
+      </div>
+    </article>
+
+    <h3 class="concert-day__location">À l'église Saint-Maimbœuf</h3>
+    
+    <article class="concert-card">
+      <div class="concert-card__image">
+        <img src="img/image6.avif" alt="Église Saint-Maimbœuf">
+      </div>
+      <div class="concert-card__content">
+        <p class="concert-card__description">
+          La scène Royale accueille, Alessandrini qui dinge la Gloria de Vivaldi
+        </p>
+        <p class="concert-card__time">Heure: 18h</p>
+      </div>
+    </article>
+  </div>
+
+  <!-- 22 décembre -->
+  <div class="concert-day">
+    <h3 class="concert-day__date">22 décembre au Château</h3>
+    
+    <article class="concert-card">
+      <div class="concert-card__image">
+        <img src="img/image2.avif" alt="Château des Lumières">
+      </div>
+      <div class="concert-card__content">
+        <p class="concert-card__description">
+          La scène des Lumières accueille, Benjamin Alard et Rinaldo Alessandrini pour un dialogue orgue et clavecin
+        </p>
+        <p class="concert-card__time">Heure: 18h</p>
+      </div>
+    </article>
+
+    <h3 class="concert-day__location">À l'église Saint-Maimbœuf</h3>
+    
+    <article class="concert-card">
+      <div class="concert-card__image">
+        <img src="img/image6.avif" alt="Église Saint-Maimbœuf">
+      </div>
+      <div class="concert-card__content">
+        <p class="concert-card__description">
+          La scène Royale accueille, les Petits Violons du Doubs pour un concert
+        </p>
+        <p class="concert-card__time">Heure: 23h</p>
+      </div>
+    </article>
+  </div>
+
+  <!-- 23 décembre -->
+  <div class="concert-day">
+    <h3 class="concert-day__date">23 décembre au Château</h3>
+    
+    <article class="concert-card">
+      <div class="concert-card__image">
+        <img src="img/image2.avif" alt="Château des Lumières">
+      </div>
+      <div class="concert-card__content">
+        <p class="concert-card__description">
+          La scène des Lumières accueille, Rinaldo Alessandrini pour une improvisation
+        </p>
+        <p class="concert-card__time">Heure: 18h</p>
+      </div>
+    </article>
+  </div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__partners">
+    <img src="img/image16.avif" alt="Partenaire Montbéliard" class="footer__partner-img">
+    <img src="img/image17.avif" alt="Partenaire 2" class="footer__partner-img">
+    <img src="img/image18.avif" alt="Partenaire Orchestre Victor Hugo" class="footer__partner-img">
+    <img src="img/image19.avif" alt="Partenaire SNCF" class="footer__partner-img">
+    <img src="img/image20.avif" alt="Partenaire l'Axone" class="footer__partner-img">
+    <img src="img/image21.avif" alt="Partenaire 6" class="footer__partner-img">
+  </div>
+  <div class="footer__links">
+    <a href="contact.html" class="footer__link">Mentions légales, Contacts</a>
+  </div>
+</footer>
+
+<script src="../src/js/script.js"></script>
+</body>
+</html>
