@@ -157,4 +157,58 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   }
+
+  // Filtres de dates dans le programme
+  const filterDatesBtn = document.getElementById('filter-dates-btn');
+  const datesDropdown = document.getElementById('dates-dropdown');
+  const dateOptions = document.querySelectorAll('.date-option');
+
+  if (filterDatesBtn && datesDropdown) {
+    // Toggle du menu déroulant
+    filterDatesBtn.addEventListener('click', function() {
+      if (datesDropdown.style.display === 'none' || datesDropdown.style.display === '') {
+        datesDropdown.style.display = 'block';
+      } else {
+        datesDropdown.style.display = 'none';
+      }
+    });
+
+    // Fermer le dropdown si on clique ailleurs
+    document.addEventListener('click', function(event) {
+      if (!filterDatesBtn.contains(event.target) && !datesDropdown.contains(event.target)) {
+        datesDropdown.style.display = 'none';
+      }
+    });
+
+    // Filtrage par date
+    dateOptions.forEach(option => {
+      option.addEventListener('click', function() {
+        const selectedDate = this.getAttribute('data-date');
+        
+        // Mettre à jour les classes actives
+        dateOptions.forEach(opt => opt.classList.remove('active'));
+        this.classList.add('active');
+        
+        // Filtrer les jours de concerts
+        const concertDays = document.querySelectorAll('.concert-day');
+        
+        if (selectedDate === 'all') {
+          // Afficher tous les jours
+          concertDays.forEach(day => day.classList.remove('hidden'));
+        } else {
+          // Filtrer par date
+          concertDays.forEach(day => {
+            if (day.getAttribute('data-date') === selectedDate) {
+              day.classList.remove('hidden');
+            } else {
+              day.classList.add('hidden');
+            }
+          });
+        }
+        
+        // Fermer le dropdown après sélection
+        datesDropdown.style.display = 'none';
+      });
+    });
+  }
 });

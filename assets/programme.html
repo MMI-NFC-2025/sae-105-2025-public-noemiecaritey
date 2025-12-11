@@ -70,9 +70,16 @@
         <button class="scene-option" data-scene="lumieres">Scène des Lumières</button>
         <button class="scene-option" data-scene="royale">Scène Royale</button>
       </div>
-      <button class="filter-btn">
+      <button class="filter-btn" id="filter-dates-btn">
         <img src="favicons/filtre_dates.svg" alt="Filtrer par dates">
       </button>
+      <div class="dates-dropdown" id="dates-dropdown" style="display: none;">
+        <button class="date-option" data-date="all">Toutes les dates</button>
+        <button class="date-option" data-date="20">20 décembre</button>
+        <button class="date-option" data-date="21">21 décembre</button>
+        <button class="date-option" data-date="22">22 décembre</button>
+        <button class="date-option" data-date="23">23 décembre</button>
+      </div>
     </div>
   </div>
 
@@ -80,10 +87,10 @@
     <h1 class="programme-page__title">Programme</h1>
 
   <!-- 20 décembre -->
-  <div class="concert-day">
+  <div class="concert-day" data-date="20">
     <h3 class="concert-day__date">20 décembre au Château</h3>
     
-    <article class="concert-card" data-scene="lumieres">
+    <article class="concert-card" data-scene="lumieres" data-date="20">
       <div class="concert-card__image">
         <img src="img/image2.avif" alt="Château des Lumières">
       </div>
@@ -97,7 +104,7 @@
 
     <h3 class="concert-day__location">À l'église Saint-Maimbœuf</h3>
     
-    <article class="concert-card" data-scene="royale">
+    <article class="concert-card" data-scene="royale" data-date="20">
       <div class="concert-card__image">
         <img src="img/image6.avif" alt="Église Saint-Maimbœuf">
       </div>
@@ -111,10 +118,10 @@
   </div>
 
   <!-- 21 décembre -->
-  <div class="concert-day">
+  <div class="concert-day" data-date="21">
     <h3 class="concert-day__date">21 décembre au Château</h3>
     
-    <article class="concert-card" data-scene="lumieres">
+    <article class="concert-card" data-scene="lumieres" data-date="21">
       <div class="concert-card__image">
         <img src="img/image2.avif" alt="Château des Lumières">
       </div>
@@ -128,7 +135,7 @@
 
     <h3 class="concert-day__location">À l'église Saint-Maimbœuf</h3>
     
-    <article class="concert-card" data-scene="royale">
+    <article class="concert-card" data-scene="royale" data-date="21">
       <div class="concert-card__image">
         <img src="img/image6.avif" alt="Église Saint-Maimbœuf">
       </div>
@@ -142,10 +149,10 @@
   </div>
 
   <!-- 22 décembre -->
-  <div class="concert-day">
+  <div class="concert-day" data-date="22">
     <h3 class="concert-day__date">22 décembre au Château</h3>
     
-    <article class="concert-card" data-scene="lumieres">
+    <article class="concert-card" data-scene="lumieres" data-date="22">
       <div class="concert-card__image">
         <img src="img/image2.avif" alt="Château des Lumières">
       </div>
@@ -159,7 +166,7 @@
 
     <h3 class="concert-day__location">À l'église Saint-Maimbœuf</h3>
     
-    <article class="concert-card" data-scene="royale">
+    <article class="concert-card" data-scene="royale" data-date="22">
       <div class="concert-card__image">
         <img src="img/image6.avif" alt="Église Saint-Maimbœuf">
       </div>
@@ -173,10 +180,10 @@
   </div>
 
   <!-- 23 décembre -->
-  <div class="concert-day">
+  <div class="concert-day" data-date="23">
     <h3 class="concert-day__date">23 décembre au Château</h3>
     
-    <article class="concert-card" data-scene="lumieres">
+    <article class="concert-card" data-scene="lumieres" data-date="23">
       <div class="concert-card__image">
         <img src="img/image2.avif" alt="Château des Lumières">
       </div>
@@ -190,7 +197,7 @@
 
     <h3 class="concert-day__location">À l'église Saint-Maimbœuf</h3>
     
-    <article class="concert-card" data-scene="royale">
+    <article class="concert-card" data-scene="royale" data-date="23">
       <div class="concert-card__image">
         <img src="img/image6.avif" alt="Église Saint-Maimbœuf">
       </div>

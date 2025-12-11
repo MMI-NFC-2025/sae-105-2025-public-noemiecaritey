@@ -333,7 +333,48 @@
   font-weight: 600;
 }
 
+.dates-dropdown {
+  position: absolute;
+  background-color: var(--blanc, #fff);
+  border: 2px solid var(--dore, #95793c);
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  top: 100%;
+  left: 160px;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.date-option {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: none;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  font-size: var(--text-s, 16px);
+  color: var(--noir, #000);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.date-option:hover {
+  background-color: var(--jaune, #d3c756);
+}
+
+.date-option.active {
+  background-color: var(--dore, #95793c);
+  color: var(--blanc, #fff);
+  font-weight: 600;
+}
+
 .concert-card.hidden {
+  display: none;
+}
+
+.concert-day.hidden {
   display: none;
 }
 
