@@ -119,6 +119,14 @@
   align-items: center;
 }
 
+.team-grid--hidden {
+  display: none;
+}
+
+.team-grid--visible {
+  display: grid;
+}
+
 .team-card__visual {
   width: 127px;
   height: 191px;

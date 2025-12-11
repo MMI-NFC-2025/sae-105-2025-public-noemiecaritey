@@ -71,4 +71,24 @@ document.addEventListener('DOMContentLoaded', function() {
       menuBtn.setAttribute('aria-expanded', 'false');
     });
   }
+
+  // Boutons expand (plus_derouler)
+  const expandButtons = document.querySelectorAll('.btn-expand');
+  
+  expandButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const targetId = this.getAttribute('data-target');
+      const targetElement = document.getElementById(targetId);
+      
+      if (targetElement) {
+        if (targetElement.classList.contains('team-grid--hidden')) {
+          targetElement.classList.remove('team-grid--hidden');
+          targetElement.classList.add('team-grid--visible');
+        } else {
+          targetElement.classList.remove('team-grid--visible');
+          targetElement.classList.add('team-grid--hidden');
+        }
+      }
+    });
+  });
 });
