@@ -76,12 +76,12 @@
     </h3>
 
   </div class="hero__visual">
-    <img alt=" affiche du festival" src="assets/img/image1.avif"/>
+    <img alt="Affiche du festival Festicloze" src="assets/img/image1.avif" loading="eager"/>
     <div class="hero__info">
       <p class="hero__date">Du <span class="u-bold">20 au 23</span> décembre à <span class="u-text-gold">Montbéliard</span></p>
 
-    <a href="billetterie.html" class="btn btn--primary">
-      <img src="assets/favicons/billeterie.svg" alt="Billetterie">
+    <a href="billetterie.html" class="btn btn--primary" aria-label="Accéder à la billetterie">
+      <img src="assets/favicons/billeterie.svg" alt="" loading="lazy">
     </a>
     </div>
   </div>
@@ -93,24 +93,24 @@
         <h2 class="section__title">Programme</h2>
     </header>
 
-      <div class="carousel">
-        <button class="carousel__btn carousel__btn--prev" aria-label="défiler à gauche menu">
-          <img src="assets/favicons/group3.svg" alt="">
+      <div class="carousel" role="region" aria-label="Sections du festival">
+        <button class="carousel__btn carousel__btn--prev" aria-label="Diapositive précédente">
+          <img src="assets/favicons/group3.svg" alt="" loading="lazy">
         </button>
 
         <div class="carousel__track">
-          <a href="assets/programme.html" class="carousel__link">
-            <img src="assets/img/image2.avif" alt="">
+          <a href="assets/programme.html" class="carousel__link" aria-label="Accéder à la page Programme">
+            <img src="assets/img/image2.avif" alt="Image de présentation du programme" loading="lazy">
           </a>
         </div>
-        <button class="carousel__btn carousel__btn--next" aria-label="défiler à droite menu">
-          <img src="assets/favicons/group2.svg" alt="">
+        <button class="carousel__btn carousel__btn--next" aria-label="Diapositive suivante">
+          <img src="assets/favicons/group2.svg" alt="" loading="lazy">
         </button>
       </div>
   </div>
 </section>
 
-<section class="section section--dark">
+<section class="section section--dark" role="region" aria-label="Artistes principaux">
   <div class="section__header">
     <h3 class="section__title section__title--light">Artistes</h3>
   </div>
@@ -118,29 +118,29 @@
   <div class="artist-grid">
     <article class="artist-card">
       <div class="artist-card__visual">
-        <img src="assets/img/image3.avif" alt="Benjamin Alard" class="artist-card__img">
+        <img src="assets/img/image3.avif" alt="Portrait de Benjamin Alard" class="artist-card__img" loading="lazy">
       </div>
       <p class="artist-card__name">Benjamin Alard</p>
     </article>
 
     <article class="artist-card">
       <div class="artist-card__visual">
-        <img src="assets/img/image4.avif" alt="Rinaldo Alessandrini" class="artist-card__img">
+        <img src="assets/img/image4.avif" alt="Portrait de Rinaldo Alessandrini" class="artist-card__img" loading="lazy">
       </div>
       <p class="artist-card__name">Rinaldo Alessandrini</p>
     </article>
   </div>
 
   <div class="section__footer">
-    <a href="/artistes.html" class="btn btn--white">
-        <img src="assets/favicons/plus.svg" alt=""> <span class="btn__icon"></span>
+    <a href="/artistes.html" class="btn btn--white" aria-label="Voir tous les artistes">
+        <img src="assets/favicons/plus.svg" alt="" loading="lazy"> <span class="btn__icon"></span>
     </a>
   </div>
 </section>
  
 <section class="section section--infos">
-    <a href="/infos_pratiques.html" class="btn btn--gold-block">
-      <img src="assets/favicons/infos_pratiques.svg" alt=""> <span class="btn__icon"></span>
+    <a href="/infos_pratiques.html" class="btn btn--gold-block" aria-label="Accéder aux informations pratiques">
+      <img src="assets/favicons/infos_pratiques.svg" alt="" loading="lazy"> <span class="btn__icon"></span>
     </a>
 </section>
 

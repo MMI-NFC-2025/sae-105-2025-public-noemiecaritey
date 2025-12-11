@@ -47,7 +47,7 @@
 
 /* Responsive image pour la première photo */
 .hero__visual img,
-.hero img[alt*="affiche"] {
+.hero img[alt*="Affiche"] {
     width: 392px;
     height: 524px;
     max-width: 100%;

@@ -576,7 +576,7 @@
 
 .scene-card__content {
   background-color: var(--jaune, #d3c756);
-  padding: 3rem 1rem 1rem;
+  padding: 3rem 0 0rem 0rem;
   text-align: left;
   width: 100vw;
   margin-left: 0;
