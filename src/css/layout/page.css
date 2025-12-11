@@ -818,3 +818,67 @@
   height: auto;
   display: block;
 }
+
+/* Contact Page */
+.contact-page {
+  padding: 0 10px;
+  max-width: none;
+  margin: 0;
+}
+
+.contact-page__title {
+  font-family: "Abril Fatface", serif;
+  font-size: 2rem;
+  color: var(--noir, #000);
+  margin-bottom: 1.5rem;
+}
+
+.contact-page__subtitle {
+  font-family: "Abril Fatface", serif;
+  font-size: 1.25rem;
+  color: var(--noir, #000);
+  margin: 2rem 0 1rem;
+}
+
+.contact-form {
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-field {
+  width: 269px;
+  height: 52px;
+  display: block;
+}
+
+.form-field--large {
+  width: 269px;
+  height: 52px;
+}
+
+.contact-info {
+  margin-bottom: 2rem;
+}
+
+.contact-info__text {
+  font-family: "Inter", sans-serif;
+  font-size: var(--text-s, 16px);
+  color: var(--noir, #000);
+  margin: 0.5rem 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.social-icon {
+  width: 80px;
+  height: 80px;
+  display: block;
+}
