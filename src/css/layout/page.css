@@ -527,3 +527,147 @@
   height: 150px;
   object-fit: cover;
 }
+
+/* Scenes Page */
+.scenes-page {
+  padding: 1rem 0;
+}
+
+.scenes-page__title {
+  font-family: "Abril Fatface", serif;
+  font-size: 2rem;
+  color: var(--noir, #000);
+  margin-bottom: 2rem;
+  padding: 0 1.5rem;
+}
+
+.scene-card {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.scene-card__image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.scene-card__image img {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  display: block;
+}
+
+.scene-card__content {
+  background-color: var(--jaune, #d3c756);
+  padding: 3rem 1rem 1rem;
+  text-align: left;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: -120px;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.scene-card__text {
+  font-family: "Inter", sans-serif;
+  font-size: var(--text-s, 16px);
+  color: var(--noir, #000);
+  margin: 0;
+  max-width: 600px;
+  width: 100%;
+  padding-top: 80px;
+}
+
+.scene-card__link {
+  display: block;
+  text-decoration: none;
+}
+
+/* Scene Detail Page */
+.scene-detail {
+  padding: 0;
+}
+
+.scene-hero {
+  margin-bottom: 0;
+}
+
+.scene-hero__link {
+  display: block;
+  text-decoration: none;
+}
+
+.scene-hero__image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.scene-hero__image img {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  display: block;
+}
+
+.scene-hero__content {
+  background-color: var(--jaune, #d3c756);
+  padding: 2rem 1rem;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: -150px;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scene-hero__title {
+  font-family: "Inter", sans-serif;
+  font-size: var(--text-s, 16px);
+  color: var(--noir, #000);
+  margin: 0;
+  max-width: 600px;
+  width: 100%;
+  padding-top: 140px;
+  padding-bottom: 2rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.scene-artists {
+  max-width: 600px;
+  width: 100%;
+  text-align: left;
+}
+
+.scene-artists__title {
+  color: var(--dore, #95793c);
+  margin-bottom: 1rem;
+}
+
+.scene-artists__text {
+  font-family: "Inter", sans-serif;
+  font-size: var(--text-s, 16px);
+  color: var(--noir, #000);
+  margin: 0 0 0.5rem 0;
+}
