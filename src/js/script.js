@@ -91,4 +91,70 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+  // Filtres de scènes dans le programme
+  const filterScenesBtn = document.getElementById('filter-scenes-btn');
+  const scenesDropdown = document.getElementById('scenes-dropdown');
+  const sceneOptions = document.querySelectorAll('.scene-option');
+
+  if (filterScenesBtn && scenesDropdown) {
+    // Toggle du menu déroulant
+    filterScenesBtn.addEventListener('click', function() {
+      if (scenesDropdown.style.display === 'none' || scenesDropdown.style.display === '') {
+        scenesDropdown.style.display = 'block';
+      } else {
+        scenesDropdown.style.display = 'none';
+      }
+    });
+
+    // Fermer le dropdown si on clique ailleurs
+    document.addEventListener('click', function(event) {
+      if (!filterScenesBtn.contains(event.target) && !scenesDropdown.contains(event.target)) {
+        scenesDropdown.style.display = 'none';
+      }
+    });
+
+    // Filtrage par scène
+    sceneOptions.forEach(option => {
+      option.addEventListener('click', function() {
+        const selectedScene = this.getAttribute('data-scene');
+        
+        // Mettre à jour les classes actives
+        sceneOptions.forEach(opt => opt.classList.remove('active'));
+        this.classList.add('active');
+        
+        // Filtrer les concerts
+        const concerts = document.querySelectorAll('.concert-card');
+        const locations = document.querySelectorAll('.concert-day__location');
+        
+        if (selectedScene === 'all') {
+          // Afficher tous les concerts
+          concerts.forEach(concert => concert.classList.remove('hidden'));
+          locations.forEach(location => location.classList.remove('hidden'));
+        } else {
+          // Filtrer par scène
+          concerts.forEach(concert => {
+            if (concert.getAttribute('data-scene') === selectedScene) {
+              concert.classList.remove('hidden');
+            } else {
+              concert.classList.add('hidden');
+            }
+          });
+          
+          // Gérer l'affichage des titres de location
+          locations.forEach(location => {
+            const nextConcert = location.nextElementSibling;
+            if (nextConcert && nextConcert.classList.contains('concert-card') && !nextConcert.classList.contains('hidden')) {
+              location.classList.remove('hidden');
+            } else {
+              location.classList.add('hidden');
+            }
+          });
+        }
+        
+        // Fermer le dropdown après sélection
+        scenesDropdown.style.display = 'none';
+      });
+    });
+  }
 });

@@ -62,9 +62,14 @@
   <div class="programme-filters">
     <h3 class="programme-filters__title">Filtres</h3>
     <div class="filter-buttons">
-      <button class="filter-btn">
+      <button class="filter-btn" id="filter-scenes-btn">
         <img src="favicons/filtres_scenes.svg" alt="Filtrer par scènes">
       </button>
+      <div class="scenes-dropdown" id="scenes-dropdown" style="display: none;">
+        <button class="scene-option" data-scene="all">Toutes les scènes</button>
+        <button class="scene-option" data-scene="lumieres">Scène des Lumières</button>
+        <button class="scene-option" data-scene="royale">Scène Royale</button>
+      </div>
       <button class="filter-btn">
         <img src="favicons/filtre_dates.svg" alt="Filtrer par dates">
       </button>
@@ -78,7 +83,7 @@
   <div class="concert-day">
     <h3 class="concert-day__date">20 décembre au Château</h3>
     
-    <article class="concert-card">
+    <article class="concert-card" data-scene="lumieres">
       <div class="concert-card__image">
         <img src="img/image2.avif" alt="Château des Lumières">
       </div>
@@ -92,13 +97,13 @@
 
     <h3 class="concert-day__location">À l'église Saint-Maimbœuf</h3>
     
-    <article class="concert-card">
+    <article class="concert-card" data-scene="royale">
       <div class="concert-card__image">
         <img src="img/image6.avif" alt="Église Saint-Maimbœuf">
       </div>
       <div class="concert-card__content">
         <p class="concert-card__description">
-          La scène Royale accueille,Benjamin Alard pour un concert à l'orgue.
+          La scène Royale accueille, Benjamin Alard pour un concert à l'orgue.
         </p>
         <p class="concert-card__time">Heure: 20h</p>
       </div>
@@ -109,7 +114,7 @@
   <div class="concert-day">
     <h3 class="concert-day__date">21 décembre au Château</h3>
     
-    <article class="concert-card">
+    <article class="concert-card" data-scene="lumieres">
       <div class="concert-card__image">
         <img src="img/image2.avif" alt="Château des Lumières">
       </div>
@@ -123,7 +128,7 @@
 
     <h3 class="concert-day__location">À l'église Saint-Maimbœuf</h3>
     
-    <article class="concert-card">
+    <article class="concert-card" data-scene="royale">
       <div class="concert-card__image">
         <img src="img/image6.avif" alt="Église Saint-Maimbœuf">
       </div>
@@ -140,7 +145,7 @@
   <div class="concert-day">
     <h3 class="concert-day__date">22 décembre au Château</h3>
     
-    <article class="concert-card">
+    <article class="concert-card" data-scene="lumieres">
       <div class="concert-card__image">
         <img src="img/image2.avif" alt="Château des Lumières">
       </div>
@@ -154,7 +159,7 @@
 
     <h3 class="concert-day__location">À l'église Saint-Maimbœuf</h3>
     
-    <article class="concert-card">
+    <article class="concert-card" data-scene="royale">
       <div class="concert-card__image">
         <img src="img/image6.avif" alt="Église Saint-Maimbœuf">
       </div>
@@ -171,7 +176,7 @@
   <div class="concert-day">
     <h3 class="concert-day__date">23 décembre au Château</h3>
     
-    <article class="concert-card">
+    <article class="concert-card" data-scene="lumieres">
       <div class="concert-card__image">
         <img src="img/image2.avif" alt="Château des Lumières">
       </div>
@@ -185,7 +190,7 @@
 
     <h3 class="concert-day__location">À l'église Saint-Maimbœuf</h3>
     
-    <article class="concert-card">
+    <article class="concert-card" data-scene="royale">
       <div class="concert-card__image">
         <img src="img/image6.avif" alt="Église Saint-Maimbœuf">
       </div>
