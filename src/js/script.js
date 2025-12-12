@@ -1,3 +1,5 @@
+// Carrousel avec boutons avant/après
+// URL : index.html (page d'accueil)
 // Carousel Programme
 document.addEventListener('DOMContentLoaded', function() {
   const carouselTrack = document.querySelector('.carousel__track');
@@ -51,6 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // Menu rétractable avec accessibilité et transitions
+  // URL : Toutes les pages (index.html, assets/historique.html, assets/programme.html, etc.)
   // Menu
   const menuBtn = document.querySelector('.menu-btn');
   const menu = document.querySelector('.menu');
@@ -72,6 +76,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // Boutons expand/collapse pour afficher plus de contenu
+  // URL : assets/historique.html (sections équipe organisateurs et technique)
   // Boutons expand (plus_derouler)
   const expandButtons = document.querySelectorAll('.btn-expand');
   
@@ -92,6 +98,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  // Filtres par scènes avec menu déroulant
+  // URL : assets/programme.html
   // Filtres de scènes dans le programme
   const filterScenesBtn = document.getElementById('filter-scenes-btn');
   const scenesDropdown = document.getElementById('scenes-dropdown');
@@ -158,6 +166,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // Filtres par dates avec menu déroulant
+  // URL : assets/programme.html
   // Filtres de dates dans le programme
   const filterDatesBtn = document.getElementById('filter-dates-btn');
   const datesDropdown = document.getElementById('dates-dropdown');
