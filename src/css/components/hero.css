@@ -45,25 +45,15 @@
     font-family: var(--font-h2);
 }
 
-/* Responsive image pour la première photo */
+/* Image de l'affiche */
 .hero__visual img,
 .hero img[alt*="Affiche"] {
     width: 392px;
     height: 524px;
+    aspect-ratio: 98/131;
     max-width: 100%;
-    max-height: 80vh;
     display: block;
     margin: 0;
     border-radius: 1rem;
     object-fit: cover;
-}
-
-@media (max-width: 480px) {
-  .hero__visual img,
-  .hero img[alt*="affiche"] {
-    width: 90vw;
-    height: auto;
-    max-width: 90vw;
-    max-height: 70vh;
-  }
 }
