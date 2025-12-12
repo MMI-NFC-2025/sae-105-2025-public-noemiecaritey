@@ -949,8 +949,65 @@
   margin-bottom: 2rem;
 }
 
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
 .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: var(--text-s, 16px);
+  font-weight: 600;
+  color: var(--noir, #000);
+  margin-bottom: 0.5rem;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-family: "Inter", sans-serif;
+  font-size: var(--text-s, 16px);
+  color: var(--noir, #000);
+  border: 2px solid var(--dore, #95793c);
+  border-radius: 5px;
+  background-color: var(--blanc, #fff);
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--jaune, #d3c756);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-submit {
+  width: 100%;
+  padding: 1rem;
+  font-family: "Abril Fatface", serif;
+  font-size: 1.25rem;
+  color: var(--blanc, #fff);
+  background-color: var(--dore, #95793c);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+  background-color: var(--jaune, #d3c756);
+  color: var(--noir, #000);
 }
 
 .form-field {

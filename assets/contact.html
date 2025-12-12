@@ -61,22 +61,28 @@
 <section class="contact-page">
   <h1 class="contact-page__title">Formulaire de contact</h1>
 
-  <form class="contact-form">
+  <form class="contact-form" method="POST" action="#">
     <div class="form-group">
-      <img src="icons/nom.svg" alt="Nom" class="form-field">
+      <label for="nom" class="form-label">Nom</label>
+      <input type="text" id="nom" name="nom" class="form-input" placeholder="Votre nom" required>
     </div>
 
     <div class="form-group">
-      <img src="icons/email.svg" alt="Email" class="form-field">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" id="email" name="email" class="form-input" placeholder="Votre email" required>
     </div>
 
     <div class="form-group">
-      <img src="icons/sujet.svg" alt="Sujet" class="form-field">
+      <label for="sujet" class="form-label">Sujet</label>
+      <input type="text" id="sujet" name="sujet" class="form-input" placeholder="Sujet de votre message" required>
     </div>
 
     <div class="form-group">
-      <img src="icons/message.svg" alt="Message" class="form-field form-field--large">
+      <label for="message" class="form-label">Message</label>
+      <textarea id="message" name="message" class="form-textarea" placeholder="Votre message" rows="5" required></textarea>
     </div>
+
+    <button type="submit" class="form-submit">Envoyer</button>
   </form>
 
   <h2 class="contact-page__subtitle">Coordonnées</h2>
@@ -88,9 +94,9 @@
   </div>
 
   <div class="social-icons">
-    <img src="icons/facebook.svg" alt="Facebook" class="social-icon">
-    <img src="icons/twitter.svg" alt="Twitter" class="social-icon">
-    <img src="icons/insta.svg" alt="Instagram" class="social-icon">
+    <img src="icons/facebook.svg" alt="Facebook" class="social-icon" loading="lazy">
+    <img src="icons/twitter.svg" alt="Twitter" class="social-icon" loading="lazy">
+    <img src="icons/insta.svg" alt="Instagram" class="social-icon" loading="lazy">
   </div>
 
 </section>
