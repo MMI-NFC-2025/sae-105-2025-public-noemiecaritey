@@ -6,7 +6,7 @@
 - NOM : CARITEY
 - PRÉNOM : Noémie
 - GROUPE : A2
-- URL du site :
+- URL du site : rainbow-mermaid-d5901e.netlify.app
 - URL FIGMA : https://www.figma.com/design/MLF2FtofrT3o9QJT2DZk76/maquette_SAE_105?node-id=2-65&t=Clb13coHYwwVzaDh-1
 
 ## Sujet
