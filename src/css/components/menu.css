@@ -74,11 +74,9 @@
   font-weight: 400;
   font-family: "Abril Fatface", serif;
   font-size: 1.5rem;
-  transition: none;
+  transition: color 0.3s ease;
 }
 
 .menu__link:hover {
-  background-color: transparent;
-  color: var(--blanc, #fff);
-  padding-left: 0;
+  color: var(--jaune, #d3c756);
 }
