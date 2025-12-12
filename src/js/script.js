@@ -222,3 +222,30 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+// Barre de recherche pour filtrer les artistes
+// URL : assets/artistes.html
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('artist-search');
+  
+  if (searchInput) {
+    searchInput.addEventListener('input', function() {
+      const searchTerm = this.value.toLowerCase().trim();
+      const artistCards = document.querySelectorAll('.artist-card');
+      
+      artistCards.forEach(card => {
+        const artistName = card.querySelector('.artist-card__name');
+        
+        if (artistName) {
+          const nameText = artistName.textContent.toLowerCase();
+          
+          if (nameText.includes(searchTerm)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        }
+      });
+    });
+  }
+});
